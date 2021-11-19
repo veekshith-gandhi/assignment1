@@ -5,11 +5,11 @@ import Todo from "./todoitem/Todo";
 function App() {
   return (
     <div>
-      <Content />
+      {/* <Content /> */}
       <hr />
       <Todo />
       <hr />
-      <Counter />
+      {/* <Counter /> */}
     </div>
   );
 }
