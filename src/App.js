@@ -1,3 +1,4 @@
+import Counter from "./counterHook/Counter";
 import Content from "./staticCard/Content";
 import Todo from "./todoitem/Todo";
 
@@ -7,6 +8,8 @@ function App() {
       <Content />
       <hr />
       <Todo />
+      <hr />
+      <Counter />
     </div>
   );
 }
