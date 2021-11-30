@@ -3,7 +3,7 @@ import data from "./data.json";
 import TemplateCard from "./TemplateCard";
 const RestaurentDetails = () => {
   const [filterRating, setFilterRating] = useState(0);
-  const [paymentMethod, setPaymentMethod] = useState(0);
+  const [paymentMethod, setPaymentMethod] = useState("card");
   const [cost, setCost] = useState(null);
 
   const handleFilterRating = (rating) => {
@@ -29,24 +29,22 @@ const RestaurentDetails = () => {
       <div>
         Payment Method
         {["card", "cash"].map((method) => (
-          <button onClick={() => handlePayment(method)}>{method}</button>
+          <button key={method} onClick={() => handlePayment(method)}>
+            {method}
+          </button>
         ))}
       </div>
       <div>
         order
         {["asc", "des"].map((order) => (
-          <button onClick={() => handleOrder(order)}>{order}</button>
+          <button key={order} onClick={() => handleOrder(order)}>
+            {order}
+          </button>
         ))}
       </div>
       {data
         .filter(({ rating, payment_method, costForTwo }) => {
-          let paymentCondition = true;
-          if (paymentMethod === "cash") {
-            paymentCondition = payment_method.cash ? true : false;
-          } else if (paymentMethod === "card") {
-            paymentCondition = payment_method.card ? true : false;
-          }
-          return rating >= filterRating && paymentCondition;
+          return rating >= filterRating && payment_method[paymentMethod];
         })
         .sort((a, b) => {
           if (cost == null) {

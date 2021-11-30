@@ -1,3 +1,4 @@
+import AppTodo from "./AppTodo/Apptodo";
 import Counter from "./counterHook/Counter";
 import DisplayTodo from "./listkeysconditionalrendering/DisplayTodo";
 import Login from "./loginCR/Login";
@@ -18,7 +19,9 @@ function App() {
       <hr />
       {/* <DisplayTodo /> */}
       <hr />
-      <RestaurentDetails />
+      {/* <RestaurentDetails /> */}
+      <hr />
+      <AppTodo />
     </div>
   );
 }

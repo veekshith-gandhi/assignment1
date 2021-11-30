@@ -1,0 +1,23 @@
+.input {
+  width: 200px;
+  background-color: rgb(131, 148, 118);
+  height: 30px;
+  color: black;
+  outline: none;
+  font-size: larger;
+  border: none;
+}
+.outerContainer {
+  display: inline-block;
+  background-color: rgb(185, 183, 179);
+  padding: 6px;
+}
+.button {
+  height: 30px;
+}
+.displayBox {
+  text-align: initial;
+  padding: 6px;
+  margin-top: 8px;
+  background: lavender;
+}
