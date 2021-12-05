@@ -5,6 +5,10 @@ import Login from "./loginCR/Login";
 import RestaurentDetails from "./RestaurentDetails/RestaurentDetails";
 import Content from "./staticCard/Content";
 import Todo from "./todoitem/Todo";
+import CounterInterval from "./UseEffectCounter/CounterInterval";
+import CreateCard from "./UseEffects/CreateCard";
+import Form from "./useRef/form";
+import Timer from "./useRef/timer";
 
 function App() {
   return (
@@ -21,7 +25,14 @@ function App() {
       <hr />
       {/* <RestaurentDetails /> */}
       <hr />
-      <AppTodo />
+      {/* <AppTodo /> */}
+      <hr />
+      {/* <CreateCard /> */}
+      <hr />
+      {/* <CounterInterval /> */}
+      <hr />
+      <Timer />
+      <Form />
     </div>
   );
 }
