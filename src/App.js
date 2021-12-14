@@ -1,4 +1,6 @@
 import AppTodo from "./AppTodo/Apptodo";
+import AxiosTodo from "./Axios1/AxiosTodo";
+import AxiosTodoList from "./Axios1/AxiosTodoList";
 import Counter from "./counterHook/Counter";
 import DisplayTodo from "./listkeysconditionalrendering/DisplayTodo";
 import Login from "./loginCR/Login";
@@ -7,6 +9,7 @@ import Content from "./staticCard/Content";
 import Todo from "./todoitem/Todo";
 import CounterInterval from "./UseEffectCounter/CounterInterval";
 import CreateCard from "./UseEffects/CreateCard";
+import UseEffTodo from "./UseEffects/UseeffTodo";
 import Form from "./useRef/form";
 import Timer from "./useRef/timer";
 
@@ -31,8 +34,11 @@ function App() {
       <hr />
       {/* <CounterInterval /> */}
       <hr />
-      <Timer />
-      <Form />
+      {/* <Timer />
+      <Form /> */}
+      <hr />
+      {/* <UseEffTodo /> */}
+      <AxiosTodoList />
     </div>
   );
 }
