@@ -1,6 +1,8 @@
 import AuthNetworkRequest from "./AppContext/AuthNetworkRequ";
 import InputField from "./AppContext/inputField";
 import Navbar from "./AppContext/Navbar";
+import DisplayLayout from "./AppContextTheme/DisplayLayout";
+import ThemeFunction from "./AppContextTheme/ThemeFunction";
 import AppTodo from "./AppTodo/Apptodo";
 import AxiosTodo from "./Axios1/AxiosTodo";
 import AxiosTodoList from "./Axios1/AxiosTodoList";
@@ -44,8 +46,10 @@ function App() {
       {/* <UseEffTodo /> */}
       {/* <AxiosTodoList /> */}
       {/* <AxiosGithubList /> */}
-      <Navbar />
-      <InputField />
+      {/* <Navbar /> */}
+      {/* <InputField /> */}
+      <ThemeFunction />
+      <DisplayLayout />
     </div>
   );
 }
