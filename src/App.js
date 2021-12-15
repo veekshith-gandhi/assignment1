@@ -1,3 +1,6 @@
+import AuthNetworkRequest from "./AppContext/AuthNetworkRequ";
+import InputField from "./AppContext/inputField";
+import Navbar from "./AppContext/Navbar";
 import AppTodo from "./AppTodo/Apptodo";
 import AxiosTodo from "./Axios1/AxiosTodo";
 import AxiosTodoList from "./Axios1/AxiosTodoList";
@@ -40,7 +43,9 @@ function App() {
       <hr />
       {/* <UseEffTodo /> */}
       {/* <AxiosTodoList /> */}
-      <AxiosGithubList />
+      {/* <AxiosGithubList /> */}
+      <Navbar />
+      <InputField />
     </div>
   );
 }
