@@ -11,6 +11,8 @@ import Counter from "./counterHook/Counter";
 import DisplayTodo from "./listkeysconditionalrendering/DisplayTodo";
 import Login from "./loginCR/Login";
 import RestaurentDetails from "./RestaurentDetails/RestaurentDetails";
+import Navbars from "./Router/Router1/Navbar";
+import AllRoute from "./Router/Router1/AllRoute";
 import Content from "./staticCard/Content";
 import Todo from "./todoitem/Todo";
 import CounterInterval from "./UseEffectCounter/CounterInterval";
@@ -48,8 +50,10 @@ function App() {
       {/* <AxiosGithubList /> */}
       {/* <Navbar /> */}
       {/* <InputField /> */}
-      <ThemeFunction />
-      <DisplayLayout />
+      {/* <ThemeFunction /> */}
+      {/* <DisplayLayout /> */}
+      <Navbars />
+      <AllRoute />
     </div>
   );
 }
